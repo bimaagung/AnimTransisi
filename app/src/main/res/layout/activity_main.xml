@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#272222"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="10dp"
+        app:srcCompat="@mipmap/logo"
+        />
+
+    <RelativeLayout
+        android:id="@+id/card_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:transitionName="imageTransition"
+            android:src="@mipmap/fotodetail" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#484545"
+            android:layout_toEndOf="@+id/foto_profil"
+            android:transitionName="nameTransition"
+            android:text="Bima Agung Setya Budi" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/foto_profil"
+            android:textColor="#817D7D"
+            android:textAlignment="gravity"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ......"
+            android:transitionName="descTransition"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_below="@+id/card_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#8F8D8D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click on card for view person detail" />
+</RelativeLayout>

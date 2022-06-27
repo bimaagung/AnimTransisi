@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/foto_profil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/fotodetail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:transitionName="imageTransition"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bima Agung Setya Budi"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="#484545"
+        android:textSize="16sp"
+        android:transitionName="nameTransition"
+        android:layout_below="@+id/foto_profil"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ......"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textColor="#817D7D"
+        android:textSize="13sp"
+        android:transitionName="descTransition"
+        android:layout_below="@+id/textView3"
+        />
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:background="@mipmap/tbfollow"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>
